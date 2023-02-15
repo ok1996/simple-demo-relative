@@ -1,0 +1,16 @@
+server:
+  port: 11010
+spring:
+  application:
+    name: native-demo-boot
+simple:
+  openApi:
+    title: 接口文档示例1
+    description: 接口文档示例描述
+    version: 1.0.0
+    contact:
+      name: ok1996
+      url: https://ok96.cn
+      email: git.ok96.cn
+springdoc:
+  enable-native-support: true
