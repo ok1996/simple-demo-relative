@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.iosd.demo.generator.code.mapper.ArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.iosd.demo.generator.code.entity.Article">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="content" property="content" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_time" property="modifyTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, title, content, create_time, modify_time
+    </sql>
+
+	<sql id="Base_Column_Where">
+	       <if test="id!=null">
+			  and id = #{id}
+		   </if>
+	       <if test="title!=null">
+			  and title = #{title}
+		   </if>
+	       <if test="content!=null">
+			  and content = #{content}
+		   </if>
+	       <if test="createTime!=null">
+			  and create_time = #{createTime}
+		   </if>
+	       <if test="modifyTime!=null">
+			  and modify_time = #{modifyTime}
+		   </if>
+	</sql>
+
+    <select id="selectList" parameterType="cn.iosd.demo.generator.code.entity.Article" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from demo_article
+        <where>
+            <include refid="Base_Column_Where" />
+        </where>
+    </select>
+
+    <select id="selectById" parameterType="Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from demo_article
+        where id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="cn.iosd.demo.generator.code.entity.Article">
+        insert into demo_article
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id!=null">id,</if>
+            <if test="title!=null and title!=''">title,</if>
+            <if test="content!=null and content!=''">content,</if>
+            <if test="createTime!=null">create_time,</if>
+            <if test="modifyTime!=null">modify_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id!=null">#{id},</if>
+            <if test="title!=null and title!=''">#{title},</if>
+            <if test="content!=null and content!=''">#{content},</if>
+            <if test="createTime!=null">#{createTime},</if>
+            <if test="modifyTime!=null">#{modifyTime},</if>
+         </trim>
+    </insert>
+
+    <update id="update" parameterType="cn.iosd.demo.generator.code.entity.Article">
+        update demo_article
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="id!=null">id = #{id},</if>
+            <if test="title!=null and title!=''">title = #{title},</if>
+            <if test="content!=null and content!=''">content = #{content},</if>
+            <if test="createTime!=null">create_time = #{createTime},</if>
+            <if test="modifyTime!=null">modify_time = #{modifyTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteById" parameterType="Long">
+        delete from demo_article where id = #{id}
+    </delete>
+
+    <delete id="deleteByIds" parameterType="Long">
+        delete from demo_article where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

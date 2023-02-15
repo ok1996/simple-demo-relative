@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author ok1996
  */
 @SpringBootApplication
-public class BootApplication {
+public class NativeBootApplication {
     public static void main(String[] args) {
-        SpringApplication.run(BootApplication.class, args);
+        SpringApplication.run(NativeBootApplication.class, args);
     }
 }

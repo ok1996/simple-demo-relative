@@ -94,15 +94,15 @@ Finished generating 'native-demo-boot' in 2m 30s.
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.2)
 
-2023-02-15T17:06:06.533+08:00  INFO 2653 --- [           main] cn.iosd.demo.boot.BootApplication        : Starting AOT-processed BootApplication using Java 17.0.5 with PID 2653 (/root/simple/code/simple-demo-relative/demo-native/native-demo-boot/target/native-demo-boot started by root in /root/simple/code/simple-demo-relative/demo-native/native-demo-boot)
-2023-02-15T17:06:06.533+08:00  INFO 2653 --- [           main] cn.iosd.demo.boot.BootApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-02-15T17:06:06.533+08:00  INFO 2653 --- [           main] cn.iosd.demo.boot.NativeBootApplication        : Starting AOT-processed BootApplication using Java 17.0.5 with PID 2653 (/root/simple/code/simple-demo-relative/demo-native/native-demo-boot/target/native-demo-boot started by root in /root/simple/code/simple-demo-relative/demo-native/native-demo-boot)
+2023-02-15T17:06:06.533+08:00  INFO 2653 --- [           main] cn.iosd.demo.boot.NativeBootApplication        : No active profile set, falling back to 1 default profile: "default"
 2023-02-15T17:06:06.545+08:00  INFO 2653 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 11010 (http)
 2023-02-15T17:06:06.545+08:00  INFO 2653 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
 2023-02-15T17:06:06.545+08:00  INFO 2653 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
 2023-02-15T17:06:06.549+08:00  INFO 2653 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2023-02-15T17:06:06.549+08:00  INFO 2653 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 16 ms
 2023-02-15T17:06:06.605+08:00  INFO 2653 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 11010 (http) with context path ''
-2023-02-15T17:06:06.606+08:00  INFO 2653 --- [           main] cn.iosd.demo.boot.BootApplication        : Started BootApplication in 0.08 seconds (process running for 0.09)
+2023-02-15T17:06:06.606+08:00  INFO 2653 --- [           main] cn.iosd.demo.boot.NativeBootApplication        : Started BootApplication in 0.08 seconds (process running for 0.09)
 ~~~
 
 
@@ -182,15 +182,15 @@ native-demo-boot.exe
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.1)
 
-2023-01-05T12:56:43.253+08:00  INFO 20724 --- [           main] cn.iosd.demo.boot.BootApplication        : Starting AOT-processed BootApplication using Java 17.0.5 with PID 20724 (E:\Code\Study\simple-demo-relative\demo-native\native-demo-boot\target\simple-native-demo.exe started by suntek in E:\Code\Study\simple-demo-relative\demo-native\native-demo-boot\target)
-2023-01-05T12:56:43.253+08:00  INFO 20724 --- [           main] cn.iosd.demo.boot.BootApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-01-05T12:56:43.253+08:00  INFO 20724 --- [           main] cn.iosd.demo.boot.NativeBootApplication        : Starting AOT-processed BootApplication using Java 17.0.5 with PID 20724 (E:\Code\Study\simple-demo-relative\demo-native\native-demo-boot\target\simple-native-demo.exe started by suntek in E:\Code\Study\simple-demo-relative\demo-native\native-demo-boot\target)
+2023-01-05T12:56:43.253+08:00  INFO 20724 --- [           main] cn.iosd.demo.boot.NativeBootApplication        : No active profile set, falling back to 1 default profile: "default"
 2023-01-05T12:56:43.337+08:00  INFO 20724 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 11010 (http)
 2023-01-05T12:56:43.338+08:00  INFO 20724 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
 2023-01-05T12:56:43.338+08:00  INFO 20724 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
 2023-01-05T12:56:43.385+08:00  INFO 20724 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2023-01-05T12:56:43.385+08:00  INFO 20724 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 132 ms
 2023-01-05T12:56:43.458+08:00  INFO 20724 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 11010 (http) with context path ''
-2023-01-05T12:56:43.459+08:00  INFO 20724 --- [           main] cn.iosd.demo.boot.BootApplication        : Started BootApplication in 0.225 seconds (process running for 0.231)
+2023-01-05T12:56:43.459+08:00  INFO 20724 --- [           main] cn.iosd.demo.boot.NativeBootApplication        : Started BootApplication in 0.225 seconds (process running for 0.231)
 ~~~
 ## 异常提示
 报错 cl.exe 不存在
