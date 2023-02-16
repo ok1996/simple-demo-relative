@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
  * </p>
  *
  * @author ok1996
- * @since 2023-02-15
  */
 @Configuration
 @MapperScan("cn.iosd.demo.generator.code.mapper")

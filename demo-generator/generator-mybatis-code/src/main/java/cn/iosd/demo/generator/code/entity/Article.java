@@ -10,7 +10,6 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author ok1996
- * @since 2023-02-15
  */
 @Schema(name = "Article", description = "测试示例文章")
 public class Article {

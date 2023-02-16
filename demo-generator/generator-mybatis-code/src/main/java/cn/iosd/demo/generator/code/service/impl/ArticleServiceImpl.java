@@ -6,14 +6,13 @@ import cn.iosd.demo.generator.code.service.IArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
-
+import java.time.LocalDateTime;
 /**
  * <p>
  * 测试示例文章 服务实现类
  * </p>
  *
  * @author ok1996
- * @since 2023-02-15
  */
 @Service
 public class ArticleServiceImpl implements IArticleService {
@@ -32,11 +31,14 @@ public class ArticleServiceImpl implements IArticleService {
 
     @Override
     public int insert(Article article) {
+        article.setCreateTime(LocalDateTime.now());
+        article.setModifyTime(LocalDateTime.now());
         return mapper.insert(article);
     }
 
     @Override
     public int update(Article article) {
+        article.setModifyTime(LocalDateTime.now());
         return mapper.update(article);
     }
 

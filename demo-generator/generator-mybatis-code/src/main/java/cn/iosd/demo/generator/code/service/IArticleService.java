@@ -9,7 +9,6 @@ import java.util.List;
  * </p>
  *
  * @author ok1996
- * @since 2023-02-15
  */
 public interface IArticleService {
     /**
