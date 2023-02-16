@@ -9,7 +9,6 @@ Simple独立示例模块
 ## demo-generator示例模块
 | 模块名称                    | 说明                          | 端口号   |
 |-------------------------|-----------------------------|-------|
-| generator-empty-project | generator生成Mybatis代码前的空项目   | 7001  |
 | generator-mybatis-code  | generator生成Mybatis代码后测试使用示例 | 13021 |
 
 

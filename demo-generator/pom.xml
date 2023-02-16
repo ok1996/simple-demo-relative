@@ -13,7 +13,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>generator-mybatis-code</module>
-        <module>generator-empty-project</module>
     </modules>
 
 </project>
