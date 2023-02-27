@@ -1,0 +1,70 @@
+server:
+  port: 7030
+
+spring:
+  application:
+    name: simple-demo-collection
+  freemarker:
+    allow-request-override: false
+    cache: true
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    settings:
+      number_format: 0.##
+    suffix: .ftl
+    template-loader-path: classpath:/templates/
+  cloud:
+    nacos:
+      server-addr: http://127.0.0.1:8848
+      username:
+      password:
+      discovery:
+        registerEnabled: true
+        namespace:
+      config:
+        namespace:
+        file-extension: yml
+  config:
+    import:
+      - nacos:application.yml
+      - nacos:simple-single-collection.yml?group=DEFAULT_GROUP&refreshEnabled=false
+simple:
+  redisson:
+    enabled: true
+    type:  standalone
+    address:  127.0.0.1:6379
+    password: password
+    database: 0
+  ## 无redisson配置情况下，默认开启Socket单机
+  socket:
+    #缺省项为false
+    enabled: true
+    port: 7031
+    upgradeTimeout: 1000000
+    pingTimeout: 6000000
+    pingInterval: 25000
+  grpc:
+    server:
+      enabled: true
+      port: 7032
+    client:
+      enabled: true
+      channel:
+        grpc-server-hello:
+          address: '127.0.0.1:7032'
+        grpc-server-person:
+          address: '127.0.0.1:7032'
+  s3:
+    enabled: true
+    accessKey: RKcxrJ80qTgziqaH
+    secretKey: pVlB5bm0vIA6aidjWLG8ZfKUIuB7dNUC
+    endpoint: 127.0.0.1:9000
+  freemarker:
+    resourceVoList:
+      # resourceHandler：访问的前缀 resourceLocations：真实路径
+      - resourceHandler:  /Users/**
+        resourceLocations:  file:/Users/

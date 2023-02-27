@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.0.2</version>
+        <relativePath/>
+    </parent>
+
+    <artifactId>demo-single-collection</artifactId>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <ok-simple.version>2023.2.2.0-SNAPSHOT</ok-simple.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.iosd</groupId>
+            <artifactId>simple-starter-web</artifactId>
+            <version>${ok-simple.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.iosd</groupId>
+            <artifactId>simple-starter-datasource</artifactId>
+            <version>${ok-simple.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.iosd</groupId>
+            <artifactId>simple-base-param</artifactId>
+            <version>${ok-simple.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.iosd</groupId>
+            <artifactId>simple-starter-socket</artifactId>
+            <version>${ok-simple.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.iosd</groupId>
+            <artifactId>simple-starter-redisson</artifactId>
+            <version>${ok-simple.version}</version>
+        </dependency>
+
+        <!--clone ok-system-simple:simple-demo-grpc-proto mvn install-->
+        <dependency>
+            <groupId>cn.iosd</groupId>
+            <artifactId>simple-demo-grpc-proto</artifactId>
+            <version>${ok-simple.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.iosd</groupId>
+            <artifactId>simple-starter-grpc</artifactId>
+            <version>${ok-simple.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.iosd</groupId>
+            <artifactId>simple-starter-s3</artifactId>
+            <version>${ok-simple.version}</version>
+        </dependency>
+        <!-- FileType Utils -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.iosd</groupId>
+            <artifactId>simple-starter-freemarker</artifactId>
+            <version>${ok-simple.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.iosd</groupId>
+            <artifactId>simple-starter-cloud</artifactId>
+            <version>${ok-simple.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.graalvm.buildtools</groupId>
+                <artifactId>native-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
+</project>
