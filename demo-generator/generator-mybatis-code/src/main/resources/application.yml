@@ -28,4 +28,4 @@ spring:
 # mybatis配置
 mybatis:
   # 配置mapper的扫描，找到所有的mapper.xml映射文件
-  mapperLocations: classpath*:/cn/iosd/demo/**/*Mapper.xml
+  mapperLocations: classpath*:/cn/iosd/demo/generator/code/**/*Mapper.xml
