@@ -29,7 +29,7 @@ public class PersonVo {
     private String address;
 
     @Schema(description = "备注")
-    @SensitiveField(rule = SensitiveRule.CUSTOM, prefixLen = 2, suffixLen = 2)
+    @SensitiveField(rule = SensitiveRule.CUSTOM_BROADSIDE_CLEAR_TEXT, prefixLen = 2, suffixLen = 2)
     private String remark;
 
     @Schema(description = "身份证")
@@ -37,5 +37,6 @@ public class PersonVo {
     private String idCard;
 
     @Schema(description = "普通字段")
+    @SensitiveField(rule = SensitiveRule.CUSTOM_BROADSIDE_MASK_TEXT, prefixLen = 1, suffixLen = 1)
     private String normalField;
 }
