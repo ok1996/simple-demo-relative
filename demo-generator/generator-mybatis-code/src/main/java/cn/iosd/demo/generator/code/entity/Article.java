@@ -1,7 +1,7 @@
 package cn.iosd.demo.generator.code.entity;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-
+import com.baomidou.mybatisplus.annotation.TableName;
 import java.time.LocalDateTime;
 
 /**
@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
  *
  * @author ok1996
  */
+@TableName("demo_article")
 @Schema(name = "Article", description = "测试示例文章")
 public class Article {
 
