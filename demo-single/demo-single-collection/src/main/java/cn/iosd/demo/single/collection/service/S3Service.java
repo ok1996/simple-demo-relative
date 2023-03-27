@@ -11,7 +11,7 @@ import java.io.InputStream;
  * @author ok1996
  */
 @Service
-public class SimpleStorageServiceImpl {
+public class S3Service {
     @Autowired
     private AmazonS3Service amazonS3Service;
 
