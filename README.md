@@ -65,7 +65,5 @@ CollectionApplication
 -Dspring.cloud.nacos.password=
 -Dspring.cloud.nacos.discovery.namespace=
 -Dspring.cloud.nacos.config.namespace=
---add-opens
-java.base/java.util=ALL-UNNAMED
 ~~~
 
