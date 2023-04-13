@@ -68,6 +68,9 @@ simple:
       # resourceHandler：访问的前缀 resourceLocations：真实路径
       - resourceHandler:  /Users/**
         resourceLocations:  file:/Users/
+  dict:
+    dictImplBeanName: remoteDictServiceImpl
+    remoteBaseUrl: http://127.0.0.1:11120
   encode:
     rsa:
       publicKey: |

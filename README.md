@@ -28,7 +28,10 @@ demo-single-collection 单体集合各模块测试类
 | simple-starter-redisson   |  √   |      |
 | simple-starter-datasource |  √   |      |
 | simple-starter-freemarker |  √   |      |
+| simple-starter-encode     |  √   |      |
+| simple-starter-dict       |  √   |      |
 | simple-base-param         |  √   |      |
+| simple-base-s3            |  √   |      |
 
 Nacos远程配置中心:application.yml  公共-通用配置
 ~~~
