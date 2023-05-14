@@ -1,9 +1,9 @@
 package cn.iosd.demo.single.collection.controller;
 
 import cn.iosd.demo.single.collection.vo.PersonVo;
-import cn.iosd.starter.encode.rsa.annotation.DecryptRequestParams;
-import cn.iosd.starter.encode.rsa.annotation.EncryptResponseParams;
-import cn.iosd.starter.encode.rsa.annotation.SecureParams;
+import cn.iosd.starter.encrypt.rsa.annotation.DecryptRequestParams;
+import cn.iosd.starter.encrypt.rsa.annotation.EncryptResponseParams;
+import cn.iosd.starter.encrypt.rsa.annotation.SecureParams;
 import cn.iosd.starter.web.domain.Response;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

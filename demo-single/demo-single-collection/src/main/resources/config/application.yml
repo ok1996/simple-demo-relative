@@ -71,7 +71,7 @@ simple:
   dict:
     dictImplBeanName: remoteDictServiceImpl
     remoteBaseUrl: http://127.0.0.1:11120
-  encode:
+  encrypt:
     rsa:
       publicKey: |
         MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6ewfgrp97KoD7beFHnzl
