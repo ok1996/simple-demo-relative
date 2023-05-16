@@ -2,7 +2,7 @@ package cn.iosd.demo.single.collection.service;
 
 import cn.iosd.demo.single.collection.vo.PersonVo;
 import cn.iosd.demo.single.collection.vo.SuperPersonVo;
-import cn.iosd.starter.encode.desensitized.annotation.Desensitized;
+import cn.iosd.starter.encrypt.desensitized.annotation.Desensitized;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
