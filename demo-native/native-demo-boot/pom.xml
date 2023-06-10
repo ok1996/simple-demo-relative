@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.11</version>
+        <version>2.7.12</version>
         <relativePath/>
     </parent>
 
@@ -42,7 +42,7 @@
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-web</artifactId>
-            <version>2022.3.3.0</version>
+            <version>2022.3.4.0</version>
         </dependency>
     </dependencies>
 
