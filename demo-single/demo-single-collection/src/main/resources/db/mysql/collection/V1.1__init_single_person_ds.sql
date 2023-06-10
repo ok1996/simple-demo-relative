@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS demo_single_person
+CREATE TABLE demo_single_person
 (
     id     bigint NOT NULL,
     name   varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '姓名',

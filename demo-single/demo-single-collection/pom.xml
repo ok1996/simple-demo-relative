@@ -16,7 +16,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <ok-simple.version>2023.3.4.0</ok-simple.version>
+        <ok-simple.version>2023.3.5.0-SNAPSHOT</ok-simple.version>
         <spring-cloud.version>2022.0.3</spring-cloud.version>
     </properties>
 
