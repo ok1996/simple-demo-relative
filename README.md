@@ -30,6 +30,7 @@ demo-single-collection 单体集合各模块测试类
 | simple-starter-freemarker |  √   |      |
 | simple-starter-encrypt    |  √   |      |
 | simple-starter-dict       |  √   |      |
+| simple-starter-email      |  √   |      |
 | simple-base-param         |  √   |      |
 | simple-base-s3            |  √   |      |
 
@@ -68,5 +69,10 @@ CollectionApplication
 -Dspring.cloud.nacos.password=
 -Dspring.cloud.nacos.discovery.namespace=
 -Dspring.cloud.nacos.config.namespace=
+-Dsimple.email.config.smtpHost=
+-Dsimple.email.config.smtpPort=
+-Dsimple.email.config.username=
+-Dsimple.email.config.password=
+-Dsimple.email.config.fromEmail=
 ~~~
 
