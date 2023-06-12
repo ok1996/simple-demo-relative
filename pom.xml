@@ -9,7 +9,6 @@
 
     <packaging>pom</packaging>
     <modules>
-        <module>demo-native</module>
         <module>demo-generator</module>
         <module>demo-single</module>
     </modules>
@@ -17,7 +16,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <description>
-        Simple Native Demo
+        Simple Demo Relative
     </description>
 
 </project>
