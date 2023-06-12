@@ -5,11 +5,10 @@
 
     <groupId>cn.iosd</groupId>
     <artifactId>simple-demo-relative</artifactId>
-    <version>2022.3.4.0</version>
+    <version>2022.3.5.0</version>
 
     <packaging>pom</packaging>
     <modules>
-        <module>demo-native</module>
         <module>demo-generator</module>
         <module>demo-single</module>
     </modules>

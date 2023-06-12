@@ -108,3 +108,10 @@ simple:
         d1FSPCDAUpyR4Qs3oMMZf2+dfTowxjBJkETXz67nnSVr4F3ePSD54JFXoLPzwQuR
         sbpjvlsjlLu5gKG3vgkIrLkQqejOFGj3yUkLw43PN3Xkb5YXaxU3jOoGr7TZCxGc
         bIBtZFeFzMkYFnnaL6Boye4=
+  email:
+    config:
+      smtpHost:
+      smtpPort:
+      username:
+      password:
+      fromEmail:
