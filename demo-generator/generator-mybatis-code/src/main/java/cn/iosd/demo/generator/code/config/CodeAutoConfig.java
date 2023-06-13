@@ -18,7 +18,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 @MapperScan("cn.iosd.demo.generator.code.mapper")
-@ComponentScan(value = {"cn.iosd.demo.generator.code.mapper"})
+@ComponentScan(value = {"cn.iosd.demo.generator.code"})
 @ConditionalOnProperty(value = "simple.scan.enabled", havingValue = "true", matchIfMissing = true)
 public class CodeAutoConfig {
 
