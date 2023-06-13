@@ -22,17 +22,17 @@
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-web</artifactId>
-            <version>2023.3.5.1-SNAPSHOT</version>
+            <version>2023.3.5.2</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-datasource</artifactId>
-            <version>2023.3.5.1-SNAPSHOT</version>
+            <version>2023.3.5.2</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-base-generator</artifactId>
-            <version>2023.3.5.1-SNAPSHOT</version>
+            <version>2023.3.5.2</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
