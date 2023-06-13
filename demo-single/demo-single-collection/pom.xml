@@ -16,7 +16,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <ok-simple.version>2023.3.5.0</ok-simple.version>
+        <ok-simple.version>2023.3.5.1-SNAPSHOT</ok-simple.version>
         <spring-cloud.version>2022.0.3</spring-cloud.version>
     </properties>
 
@@ -107,6 +107,12 @@
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-email</artifactId>
             <version>${ok-simple.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>generator-mybatis-code</artifactId>
+            <version>3.1.0</version>
         </dependency>
     </dependencies>
 
