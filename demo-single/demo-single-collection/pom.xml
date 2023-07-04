@@ -16,7 +16,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <ok-simple.version>2022.3.5.1</ok-simple.version>
+        <ok-simple.version>2022.4.0.0</ok-simple.version>
     </properties>
 
     <dependencies>
@@ -30,45 +30,37 @@
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-web</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-datasource</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-base-param</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-socket</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-redisson</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-grpc</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-s3</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-base-s3</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <!-- FileType Utils -->
@@ -81,31 +73,26 @@
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-freemarker</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-cloud</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-encrypt</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-dict</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-email</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
@@ -114,6 +101,18 @@
             <version>2.7.12</version>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cn.iosd</groupId>
+                <artifactId>simple-dependencies</artifactId>
+                <version>${ok-simple.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
