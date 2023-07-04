@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.0</version>
+        <version>3.1.1</version>
         <relativePath/>
     </parent>
 
@@ -16,7 +16,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <ok-simple.version>2023.3.5.2</ok-simple.version>
+        <ok-simple.version>2023.4.0.0</ok-simple.version>
         <spring-cloud.version>2022.0.3</spring-cloud.version>
     </properties>
 
@@ -31,45 +31,37 @@
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-web</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-datasource</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-base-param</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-socket</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-redisson</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-grpc</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-s3</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-base-s3</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <!-- FileType Utils -->
@@ -82,39 +74,42 @@
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-freemarker</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-cloud</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-encrypt</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-dict</artifactId>
-            <version>${ok-simple.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-email</artifactId>
-            <version>${ok-simple.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>generator-mybatis-code</artifactId>
-            <version>3.1.0</version>
         </dependency>
     </dependencies>
+
+    <!-- 依赖声明 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- SimpleDependencies 依赖配置 -->
+            <dependency>
+                <groupId>cn.iosd</groupId>
+                <artifactId>simple-dependencies</artifactId>
+                <version>${ok-simple.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>

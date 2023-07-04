@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.0</version>
+        <version>3.1.1</version>
         <relativePath/>
     </parent>
 
@@ -22,17 +22,14 @@
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-web</artifactId>
-            <version>2023.3.5.2</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-starter-datasource</artifactId>
-            <version>2023.3.5.2</version>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
             <artifactId>simple-base-generator</artifactId>
-            <version>2023.3.5.2</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -40,6 +37,20 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <!-- 依赖声明 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- SimpleDependencies 依赖配置 -->
+            <dependency>
+                <groupId>cn.iosd</groupId>
+                <artifactId>simple-dependencies</artifactId>
+                <version>2023.4.0.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <resources>
