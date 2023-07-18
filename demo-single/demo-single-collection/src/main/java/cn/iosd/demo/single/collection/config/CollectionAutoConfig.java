@@ -1,11 +1,13 @@
 package cn.iosd.demo.single.collection.config;
 
+import cn.iosd.starter.datasource.mybatis.MapperLocations;
 import org.flywaydb.core.Flyway;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
+import java.util.List;
 
 /**
  * <p>
@@ -27,5 +29,10 @@ public class CollectionAutoConfig {
                 .load();
         flyway.migrate();
         return flyway;
+    }
+
+    @Bean
+    public MapperLocations collectionMapperLocations() {
+        return new MapperLocations(List.of("classpath*:/cn/iosd/demo/single/collection/mapper/**/*Mapper.xml"));
     }
 }
