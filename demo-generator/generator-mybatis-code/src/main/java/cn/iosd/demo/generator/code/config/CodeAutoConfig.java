@@ -1,17 +1,19 @@
 package cn.iosd.demo.generator.code.config;
 
+import cn.iosd.starter.datasource.mybatis.MapperLocations;
 import org.flywaydb.core.Flyway;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
+import java.util.List;
 
 /**
  * <p>
- * 配置MapperScan、Flyway、ComponentScan以及是否启用
+ * 配置MapperScan、MapperLocations、Flyway、ComponentScan以及是否启用
  * </p>
  *
  * @author ok1996
@@ -34,4 +36,8 @@ public class CodeAutoConfig {
         return flyway;
     }
 
+    @Bean
+    public MapperLocations codeLocations() {
+        return new MapperLocations(List.of("classpath*:/cn/iosd/demo/generator/code/**/*Mapper.xml"));
+    }
 }
