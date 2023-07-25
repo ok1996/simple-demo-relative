@@ -1,5 +1,6 @@
 package cn.iosd.demo.single.collection.config;
 
+import cn.iosd.starter.datasource.mybatis.MapperLocations;
 import org.flywaydb.core.Flyway;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
@@ -9,7 +10,7 @@ import javax.sql.DataSource;
 
 
 /**
- * 配置MapperScan、Flyway、ComponentScan以及是否启用
+ * 配置MapperScan、MapperLocations、Flyway、ComponentScan以及是否启用
  *
  * @author ok1996
  */
@@ -29,4 +30,8 @@ public class CollectionAutoConfig {
         return flyway;
     }
 
+    @Bean
+    public MapperLocations collectionMapperLocations() {
+        return new MapperLocations("classpath*:/cn/iosd/demo/single/collection/mapper/**/*Mapper.xml");
+    }
 }
