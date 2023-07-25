@@ -38,6 +38,6 @@ public class CodeAutoConfig {
 
     @Bean
     public MapperLocations codeLocations() {
-        return new MapperLocations(List.of("classpath*:/cn/iosd/demo/generator/code/**/*Mapper.xml"));
+        return new MapperLocations("classpath*:/cn/iosd/demo/generator/code/**/*Mapper.xml");
     }
 }

@@ -33,6 +33,6 @@ public class CollectionAutoConfig {
 
     @Bean
     public MapperLocations collectionMapperLocations() {
-        return new MapperLocations(List.of("classpath*:/cn/iosd/demo/single/collection/mapper/**/*Mapper.xml"));
+        return new MapperLocations("classpath*:/cn/iosd/demo/single/collection/mapper/**/*Mapper.xml");
     }
 }
