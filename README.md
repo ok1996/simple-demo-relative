@@ -6,7 +6,7 @@ Simple独立示例模块
 
 | 模块名称                   | 说明                          | 端口号  |
 |------------------------|-----------------------------|------|
-| generator-mybatis-code | generator生成Mybatis代码后测试使用示例 | 7020 |
+| demo-generator | generator模块生成代码测试使用示例 | 8080 |
 
 ## demo-single示例模块
 
