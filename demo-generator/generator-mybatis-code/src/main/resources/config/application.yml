@@ -1,6 +1,0 @@
-server:
-  port: 7020
-
-spring:
-  application:
-    name: generator-mybatis-code
