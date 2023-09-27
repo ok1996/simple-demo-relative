@@ -4,6 +4,7 @@ import cn.iosd.demo.test.service.entity.ArticleEntity;
 import cn.iosd.demo.test.service.mapper.ArticleMapper;
 import cn.iosd.demo.test.api.service.IArticleService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
  * @author ok1996
  */
 @Service
+@Primary
 public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, ArticleEntity> implements IArticleService {
 
 }

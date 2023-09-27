@@ -3,6 +3,7 @@ package cn.iosd.demo.test.api.service.impl;
 import cn.iosd.demo.test.api.feign.ArticleFeign;
 import cn.iosd.demo.test.api.service.IArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * <p>
@@ -11,7 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  *
  * @author ok1996
  */
-public class ArticleServiceFeign implements IArticleService{
+@Service
+public class ArticleServiceFeignImpl implements IArticleService{
 
     @Autowired
     private ArticleFeign articleFeign;

@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.2</version>
+        <version>3.1.4</version>
         <relativePath/>
     </parent>
 
@@ -16,8 +16,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <ok-simple.version>2023.5.0.0</ok-simple.version>
-        <spring-cloud.version>2022.0.3</spring-cloud.version>
+        <ok-simple.version>2023.5.1.0</ok-simple.version>
     </properties>
 
     <dependencies>
@@ -56,12 +55,7 @@
 
         <dependency>
             <groupId>cn.iosd</groupId>
-            <artifactId>simple-starter-s3</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>cn.iosd</groupId>
-            <artifactId>simple-base-s3</artifactId>
+            <artifactId>simple-base-s3-service</artifactId>
         </dependency>
 
         <!-- FileType Utils -->

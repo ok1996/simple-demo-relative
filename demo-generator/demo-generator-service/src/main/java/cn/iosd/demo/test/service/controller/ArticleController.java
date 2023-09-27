@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Tag(name = "测试示例文章")
 @RestController
-@RequestMapping("/demo-generator/Article")
+@RequestMapping("/demo-generator-service/Article")
 public class ArticleController extends BaseController<ArticleEntity>{
 
 }

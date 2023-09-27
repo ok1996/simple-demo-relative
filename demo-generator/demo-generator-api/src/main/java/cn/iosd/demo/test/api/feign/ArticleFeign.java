@@ -7,8 +7,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 /**
  * @author ok1996
  */
-@FeignClient(name = "demo-generator", contextId = "ArticleServiceFeign", path = "/demo-generator/Article"
-        , url = "${simple.feign.simple-base-generator.url:}", primary = false)
+@FeignClient(name = "demo-generator-service", contextId = "ArticleServiceFeign", path = "/demo-generator-service/Article"
+        , url = "${simple.feign.demo-generator-service.url:}", primary = false)
 public interface ArticleFeign extends CrudOperations<Article> {
 
 }
