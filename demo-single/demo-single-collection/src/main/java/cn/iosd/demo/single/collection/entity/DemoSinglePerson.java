@@ -1,6 +1,7 @@
 package cn.iosd.demo.single.collection.entity;
 
 import cn.iosd.starter.dict.annotation.DictField;
+import cn.iosd.starter.dict.service.impl.LocalDictServiceImpl;
 import com.baomidou.mybatisplus.annotation.TableField;
 import io.swagger.v3.oas.annotations.media.Schema;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -22,7 +23,7 @@ public class DemoSinglePerson {
     private String name;
 
     @Schema(description = "性别")
-    @DictField(dictionaryParams = "sex", dictImplBeanName = "localDictServiceImpl", relatedField = "sexText")
+    @DictField(dictionaryParams = "sex", dictImplClass = LocalDictServiceImpl.class, relatedField = "sexText")
     private Integer sex;
 
     @Schema(description = "性别")
