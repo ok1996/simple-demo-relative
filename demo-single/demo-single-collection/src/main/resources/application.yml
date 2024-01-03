@@ -25,7 +25,3 @@ spring:
           # password: password
           # url:
           # driver-class-name:
-
-  cloud:
-    compatibility-verifier:
-      enabled: false

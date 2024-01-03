@@ -28,17 +28,22 @@ spring:
       config:
         namespace:
         file-extension: yml
+        import-check:
+          enabled: false
   config:
     import:
-      - nacos:application.yml
-      - nacos:simple-single-collection.yml?group=DEFAULT_GROUP&refreshEnabled=false
+      - optional:nacos:application.yml
+      - optional:nacos:simple-single-collection.yml?group=DEFAULT_GROUP&refreshEnabled=false
 simple:
   redisson:
     enabled: true
-    type:  standalone
-    address:  127.0.0.1:6379
-    password: password
-    database: 0
+    type: standalone
+    config:
+      ## 单体模式
+      standalone:
+        address: redis://127.0.0.1:6379
+        password:
+        database: 0
   ## 无redisson配置情况下，默认开启Socket单机
   socket:
     #缺省项为false
