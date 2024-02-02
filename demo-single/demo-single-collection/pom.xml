@@ -4,22 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.1</version>
+        <groupId>cn.iosd</groupId>
+        <artifactId>simple-parent</artifactId>
+        <version>2024.1.1.0</version>
         <relativePath/>
     </parent>
 
-    <groupId>cn.iosd</groupId>
     <artifactId>demo-single-collection</artifactId>
-    <version>2024.1.0.0</version>
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <ok-simple.version>2024.1.0.0</ok-simple.version>
-    </properties>
 
     <dependencies>
         <!-- 工具类 -->
@@ -39,7 +30,7 @@
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
-            <artifactId>simple-base-param-service</artifactId>
+            <artifactId>simple-base-config-service</artifactId>
         </dependency>
         <dependency>
             <groupId>cn.iosd</groupId>
@@ -98,20 +89,6 @@
         </dependency>
     </dependencies>
 
-    <!-- 依赖声明 -->
-    <dependencyManagement>
-        <dependencies>
-            <!-- SimpleDependencies 依赖配置 -->
-            <dependency>
-                <groupId>cn.iosd</groupId>
-                <artifactId>simple-dependencies</artifactId>
-                <version>${ok-simple.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <build>
         <finalName>${project.artifactId}</finalName>
 
@@ -157,30 +134,6 @@
                 </dependencies>
             </plugin>
         </plugins>
-
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-assembly-plugin</artifactId>
-                    <executions>
-                        <execution>
-                            <id>deploy</id>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>single</goal>
-                            </goals>
-                            <configuration>
-                                <finalName>${project.artifactId}</finalName>
-                                <descriptorRefs>
-                                    <descriptorRef>simple-assembly</descriptorRef>
-                                </descriptorRefs>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 
 </project>

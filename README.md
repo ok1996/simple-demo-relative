@@ -25,7 +25,7 @@ demo-single-collection 单体集合各模块测试类
 | simple-starter-encrypt    |  √   |      |
 | simple-starter-dict       |  √   |      |
 | simple-starter-email      |  √   |      |
-| simple-base-param         |  √   |      |
+| simple-base-config        |  √   |      |
 | simple-base-s3            |  √   |      |
 
 Nacos远程配置中心:application.yml  公共-通用配置
