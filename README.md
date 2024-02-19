@@ -27,6 +27,7 @@ demo-single-collection 单体集合各模块测试类
 | simple-starter-email      |  √   |      |
 | simple-base-config        |  √   |      |
 | simple-base-s3            |  √   |      |
+| simple-parent             |  √   |      |
 
 Nacos远程配置中心:application.yml  公共-通用配置
 ~~~
