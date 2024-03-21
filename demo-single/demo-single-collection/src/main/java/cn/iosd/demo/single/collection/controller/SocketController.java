@@ -1,6 +1,6 @@
 package cn.iosd.demo.single.collection.controller;
 
-import cn.iosd.starter.socket.service.SocketMessageServer;
+import cn.iosd.starter.socketio.service.SocketIOMessageServer;
 import cn.iosd.starter.web.domain.Response;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("socket")
 public class SocketController {
     @Autowired(required = false)
-    private SocketMessageServer socketMessageServer;
+    private SocketIOMessageServer socketMessageServer;
 
     @Operation(summary = "广播所有连接客户端")
     @PostMapping("broadcast")

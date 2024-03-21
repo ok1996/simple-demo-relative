@@ -1,9 +1,10 @@
 package cn.iosd.demo.generator.service.service;
 
+import cn.iosd.demo.generator.api.domain.Article;
 import cn.iosd.demo.generator.service.entity.ArticleEntity;
 import cn.iosd.demo.generator.service.mapper.ArticleMapper;
 import cn.iosd.demo.generator.api.service.IArticleService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import cn.iosd.starter.datasource.base.BaseServiceImpl;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,6 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Primary
-public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, ArticleEntity> implements IArticleService {
+public class ArticleServiceImpl extends BaseServiceImpl<ArticleMapper, ArticleEntity, Article> implements IArticleService {
 
 }

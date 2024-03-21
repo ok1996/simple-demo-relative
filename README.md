@@ -15,7 +15,7 @@ demo-single-collection 单体集合各模块测试类
 | 依赖模块                      | 集成测试 | 端口号  |
 |:--------------------------|:----:|:----:|
 | simple-starter-web        |  √   | 7030 |
-| simple-starter-socket     |  √   | 7031 |
+| simple-starter-socketio   |  √   | 7031 |
 | simple-starter-grpc       |  √   | 7032 |
 | simple-starter-s3         |  √   |      |
 | simple-starter-cloud      |  √   |      |

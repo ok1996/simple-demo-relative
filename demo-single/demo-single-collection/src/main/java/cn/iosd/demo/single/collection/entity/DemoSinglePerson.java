@@ -1,7 +1,7 @@
 package cn.iosd.demo.single.collection.entity;
 
+import cn.iosd.demo.single.collection.service.dict.LocalDictServiceImpl;
 import cn.iosd.starter.dict.annotation.DictField;
-import cn.iosd.starter.dict.service.impl.LocalDictServiceImpl;
 import com.baomidou.mybatisplus.annotation.TableField;
 import io.swagger.v3.oas.annotations.media.Schema;
 import com.baomidou.mybatisplus.annotation.TableName;

@@ -1,9 +1,8 @@
 package cn.iosd.demo.single.collection.vo.dict;
 
 import cn.iosd.demo.single.collection.service.CustomDictServiceImpl;
+import cn.iosd.demo.single.collection.service.dict.RemoteDictServiceImpl;
 import cn.iosd.starter.dict.annotation.DictField;
-import cn.iosd.starter.dict.service.impl.LocalDictServiceImpl;
-import cn.iosd.starter.dict.service.impl.RemoteDictServiceImpl;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

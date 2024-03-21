@@ -1,5 +1,7 @@
 package cn.iosd.demo.generator.api.service;
 
+import cn.iosd.demo.generator.api.domain.Article;
+import cn.iosd.starter.web.base.ICrudService;
 
 /**
  * <p>
@@ -8,6 +10,6 @@ package cn.iosd.demo.generator.api.service;
  *
  * @author ok1996
  */
-public interface IArticleService {
+public interface IArticleService extends ICrudService<Article> {
 
 }
